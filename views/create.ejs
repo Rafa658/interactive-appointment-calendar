@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <h1>Cadastro de Consulta</h1>
+    <hr>
+    <form method="POST" action="create">
+        <!-- vai para a rota create  -->
+        <input type="text" name="name" placeholder="Nome do paciente" class="form-control">
+        <input type="email" name="email" id="email" placeholder="email@email.com" class="form-control">
+        <input type="text" name="cpf" id="cpf" placeholder="CPF" class="form-control cpf">
+        <input type="text" name="description" id="description" placeholder="Descrição" class="form-control">
+        <input type="date" name="date" id="date" placeholder="01/01/2001" class="form-control">
+        <input type="time" name="time" id="time" class="form-control">
+        <button class="btn btn-success btn-block">Agendar</button>
+    </form>
+
+</body>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+<script src="jquery.mask.min.js"></script>
+<script>
+    $('.cpf').mask('000.000.000-00');
+</script>
+</html>
